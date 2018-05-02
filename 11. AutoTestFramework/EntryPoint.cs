@@ -6,7 +6,12 @@ namespace _11.AutoTestFramework
     {
         static void Main()
         {
-            Menu menu = new Menu();
+
+
+            NavigateTo.LoginFormThroughtTheMenu();
+            Actions.FillLoginForm(Config.Credentials.Valid.Username, Config.Credentials.Valid.Password, Config.Credentials.Valid.RepeatPassword);
+
+            /*Menu menu = new Menu();
 
             Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
 
@@ -20,7 +25,7 @@ namespace _11.AutoTestFramework
 
             Thread.Sleep(500);
 
-            Driver.driver.Quit();
+            Driver.driver.Quit();*/
         }
     }
 }
