@@ -19,6 +19,8 @@ namespace _11.AutoTestFramework
             NavigateTo.LoginFormThroughThePost();
 
             Thread.Sleep(500);
+
+            Driver.driver.Quit();
         }
     }
 }

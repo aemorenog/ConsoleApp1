@@ -27,7 +27,7 @@ namespace _11.AutoTestFramework
 
             menu.TestCases.Click();
             Thread.Sleep(500);
-            tcPage.UsernameField.Click();
+            tcPage.UsernameCase.Click();
             Thread.Sleep(500);
             ufPost.LoginFormLink.Click();
             Thread.Sleep(500);

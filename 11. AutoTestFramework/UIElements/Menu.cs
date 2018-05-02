@@ -22,7 +22,7 @@ namespace _11.AutoTestFramework
         [FindsBy(How = How.Id, Using = "menu-item-57")]
         public IWebElement TestCases { get; set; }
 
-        [FindsBy(How = How.Id, Using = "menu-item-28")]
+        [FindsBy(How = How.Id, Using = "menu-item-58")]
         public IWebElement TestScenarios { get; set; }
 
         [FindsBy(How = How.Id, Using = "menu-item-26")]
