@@ -1,4 +1,6 @@
-﻿namespace _11.AutoTestFramework
+﻿using System.Threading;
+
+namespace _11.AutoTestFramework
 {
     class EntryPoint
     {
@@ -7,7 +9,16 @@
             Menu menu = new Menu();
 
             Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
-            menu.Selectors.Click();
+
+            NavigateTo.LoginFormThroughtTheMenu();
+
+            Thread.Sleep(500);
+
+            Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
+
+            NavigateTo.LoginFormThroughThePost();
+
+            Thread.Sleep(500);
         }
     }
 }

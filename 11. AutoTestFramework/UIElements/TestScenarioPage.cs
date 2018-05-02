@@ -8,6 +8,6 @@ namespace _11.AutoTestFramework.UIElements
 {
     class TestScenarioPage
     {
-        //asdasdsad
+        
     }
 }
