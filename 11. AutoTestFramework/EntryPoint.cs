@@ -1,4 +1,4 @@
-﻿using System.Threading;
+﻿using NUnit.Framework;
 
 namespace _11.AutoTestFramework
 {
@@ -6,11 +6,6 @@ namespace _11.AutoTestFramework
     {
         static void Main()
         {
-
-
-            NavigateTo.LoginFormThroughtTheMenu();
-            Actions.FillLoginForm(Config.Credentials.Valid.Username, Config.Credentials.Valid.Password, Config.Credentials.Valid.RepeatPassword);
-
             /*Menu menu = new Menu();
 
             Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
@@ -26,6 +21,24 @@ namespace _11.AutoTestFramework
             Thread.Sleep(500);
 
             Driver.driver.Quit();*/
+
+            NavigateTo.LoginFormThroughtTheMenu();
+            Actions.FillLoginForm(Config.Credentials.Valid.Username, Config.Credentials.Valid.Password, Config.Credentials.Valid.RepeatPassword);
+
+
         }
+
+        [SetUp]
+        public void Initialize()
+        {
+            Actions.InitializeDriver();
+        }
+
+        [TearDown]
+        public void CleanUp()
+        {
+            Driver.driver.Quit();
+        }
+
     }
 }
