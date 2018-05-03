@@ -17,7 +17,7 @@ namespace _11.AutoTestFramework
 
             lsPost.UsernameField.SendKeys(username);
             lsPost.PasswordField.SendKeys(password);
-            lsPost.RepeatPasswordField.Sendkeys(repeatPassword);
+            lsPost.RepeatPasswordField.SendKeys(repeatPassword);
             lsPost.LoginButton.Click();
         }
     }

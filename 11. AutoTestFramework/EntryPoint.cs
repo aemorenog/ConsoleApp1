@@ -1,14 +1,15 @@
 ﻿using NUnit.Framework;
+using OpenQA.Selenium;
 
 namespace _11.AutoTestFramework
 {
     class EntryPoint
     {
+
+
         static void Main()
         {
             /*Menu menu = new Menu();
-
-            Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
 
             NavigateTo.LoginFormThroughtTheMenu();
 
@@ -20,25 +21,11 @@ namespace _11.AutoTestFramework
 
             Thread.Sleep(500);
 
-            Driver.driver.Quit();*/
+            Driver.driver.Quit();**/
 
+            Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
             NavigateTo.LoginFormThroughtTheMenu();
-            Actions.FillLoginForm(Config.Credentials.Valid.Username, Config.Credentials.Valid.Password, Config.Credentials.Valid.RepeatPassword);
-
-
+            Actions.FillLoginForm(Config.)
         }
-
-        [SetUp]
-        public void Initialize()
-        {
-            Actions.InitializeDriver();
-        }
-
-        [TearDown]
-        public void CleanUp()
-        {
-            Driver.driver.Quit();
-        }
-
     }
 }
