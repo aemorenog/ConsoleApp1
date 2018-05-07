@@ -12,6 +12,7 @@
                 public static string Email = "example@example.com";
                 public static string Username = "Username";
                 public static string Password = "password123!";
+                public static string RepeatPassowrd = "password123!";
             }
 
             public static class Invalid
@@ -45,28 +46,29 @@
                 }
 
 
-                public class MenuElements
-                {
-                    public static string Introduction = "Introduction";
-                    public static string Selectors = "Selectors";
-                    public static string SpecialElements = "Special Elements";
-                    public static string TestCases = "Test Cases";
-                    public static string TestScenarios = "Test Scenarios";
-                    public static string About = "About";
-                }
+            }            
+        }
 
-                public static class TestMessage
-                {
+        public static class TestMessage
+        {
 
-                }
+        }
 
-                public static class AlertsText
-                {
-                    public static string UsernameLenghtOutOfRange = "User Id should not be empty / length be between 5 to 12";
-                    public static string PasswordLenghtOutOfRange = "Password should not be empty / length be between 5 to 12";
-                    public static string SuccessfullLogin = "Succesful login";
-                }
-            }
+        public class MenuElements
+        {
+            public static string Introduction = "Introduction";
+            public static string Selectors = "Selectors";
+            public static string SpecialElements = "Special Elements";
+            public static string TestCases = "Test Cases";
+            public static string TestScenarios = "Test Scenarios";
+            public static string About = "About";
+        }
+
+        public static class AlertsMessages
+        {
+            public static string UsernameLenghtOutOfRange = "User Id should not be empty / length be between 5 to 12";
+            public static string PasswordLenghtOutOfRange = "Password should not be empty / length be between 5 to 12";
+            public static string SuccessfullLogin = "Succesful login";
         }
     }
-}
+ }

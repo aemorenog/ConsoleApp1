@@ -6,6 +6,7 @@ namespace _11.AutoTestFramework
     class EntryPoint
     {
 
+        IAlert alert;
 
         static void Main()
         {
@@ -23,9 +24,35 @@ namespace _11.AutoTestFramework
 
             Driver.driver.Quit();**/
 
-            Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
+            //Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
+
+            /*NavigateTo.LoginFormThroughtTheMenu();
+            Actions.FillLoginForm(Config.Credentials.Valid.Username, Config.Credentials.Valid.Password, Config.Credentials.Valid.RepeatPassowrd);*/
+        }
+
+        [SetUp]
+        public void Initialize()
+        {
+            Actions.InitializeDriver();
+        }
+
+        [Test]
+        public void ValidLogin()
+        {
             NavigateTo.LoginFormThroughtTheMenu();
-            Actions.FillLoginForm(Config.)
+            Actions.FillLoginForm(Config.Credentials.Valid.Username, Config.Credentials.Valid.Password, Config.Credentials.Valid.RepeatPassowrd);
+
+            alert = Driver.driver.SwitchTo().Alert();
+
+            Assert.AreEqual(Config.AlertsMessages.SuccessfullLogin, alert.Text);
+
+            alert.Accept();
+        }
+
+        [TearDown]
+        public void CleanUp()
+        {
+            Driver.driver.Quit();
         }
     }
 }
