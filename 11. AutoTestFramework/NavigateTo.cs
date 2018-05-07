@@ -5,7 +5,19 @@ namespace _11.AutoTestFramework
 {
     public static class NavigateTo
     {
-        public static void LoginFormThroughtTheMenu()
+        public static void LoginFormSecenarioThroughtTestCases()
+        {
+            Menu menu = new Menu();
+            TestCasesPage tcPage = new TestCasesPage();
+            UsernameCasePost ucPost = new UsernameCasePost();
+
+            menu.TestCases.Click();
+            tcPage.UsernameCase.Click();
+            ucPost.LoginFormLink.Click();
+        }
+
+
+       public static void LoginFormThroughtTheMenu()
         {
             Menu menu = new Menu();
 

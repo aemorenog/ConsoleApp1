@@ -6,7 +6,7 @@ namespace _11.AutoTestFramework
     class EntryPoint
     {
 
-        IAlert alert;
+        //IAlert alert;
 
         static void Main()
         {
@@ -30,7 +30,7 @@ namespace _11.AutoTestFramework
             Actions.FillLoginForm(Config.Credentials.Valid.Username, Config.Credentials.Valid.Password, Config.Credentials.Valid.RepeatPassowrd);*/
         }
 
-        [SetUp]
+        /*[SetUp]
         public void Initialize()
         {
             Actions.InitializeDriver();
@@ -53,6 +53,6 @@ namespace _11.AutoTestFramework
         public void CleanUp()
         {
             Driver.driver.Quit();
-        }
+        }*/
     }
 }
