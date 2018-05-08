@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 
 namespace _11.AutoTestFramework.Scenarios
 {
+    [Parallelizable(ParallelScope.None)]
     public class LoginInvalidPassword
     {
         IAlert alert;

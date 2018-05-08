@@ -2,16 +2,17 @@
 namespace _11.AutoTestFramework
 {
     using _11.AutoTestFramework.UIElements;
+    using OpenQA.Selenium;
     using OpenQA.Selenium.Chrome;
-    
+    using System;
 
     public static class Actions
     {
         public static void InitializeDriver()
         {
-            Driver.driver = new ChromeDriver();
-            Driver.driver.Navigate().GoToUrl(Config.BaseURL);
-            Driver.WaitForElementUpTo(Config.ElementsWaitingTimeout);
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl(Config.BaseURL);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }
 
         public static void FillLoginForm(string username, string password, string repeatPassword)

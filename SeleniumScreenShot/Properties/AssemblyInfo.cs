@@ -1,23 +1,18 @@
-﻿using NUnit.Framework;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("11. AutoTestFramework")]
+[assembly: AssemblyTitle("SeleniumScreenShot")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("11. AutoTestFramework")]
+[assembly: AssemblyProduct("SeleniumScreenShot")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-
-[assembly: Parallelizable(ParallelScope.Fixtures)]
-//LevelOfParallelims para correr mas de una prueba prueba dependiente de los nucleos
-[assembly:LevelOfParallelism(2)]
 
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from
@@ -25,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("bf3c7ca0-cd0d-4ef0-812c-feb285d572ca")]
+[assembly: Guid("7a38e0d4-457e-4b03-9eae-dcdf91ba34a7")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -3,6 +3,7 @@ using NUnit.Framework;
 
 namespace _11.AutoTestFramework.Scenarios
 {
+    [Parallelizable]
     public class LoginInvalidUsername
     {
         IAlert alert;
