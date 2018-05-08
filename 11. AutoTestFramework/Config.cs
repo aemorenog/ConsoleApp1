@@ -2,7 +2,7 @@
 {
     public static class Config
     {
-        public static int ElementWaitingTimeout = 5;
+        public static int ElementsWaitingTimeout = 5;
         public static string BaseURL = "http://testing.todorvachev.com";
 
         public static class Credentials
