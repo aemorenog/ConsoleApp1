@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. AutoTestFramework", "11
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumScreenShot", "SeleniumScreenShot\SeleniumScreenShot.csproj", "{7A38E0D4-457E-4B03-9EAE-DCDF91BA34A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementLocation", "ElementLocation\ElementLocation.csproj", "{180097AA-1794-42D9-AAEA-EA9B56BEDD79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecuteJavaScriptCSharp", "ExecuteJavaScriptCSharp\ExecuteJavaScriptCSharp.csproj", "{42412517-D92F-41D7-9179-E5D6500AD204}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{7A38E0D4-457E-4B03-9EAE-DCDF91BA34A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A38E0D4-457E-4B03-9EAE-DCDF91BA34A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A38E0D4-457E-4B03-9EAE-DCDF91BA34A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{180097AA-1794-42D9-AAEA-EA9B56BEDD79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180097AA-1794-42D9-AAEA-EA9B56BEDD79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180097AA-1794-42D9-AAEA-EA9B56BEDD79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180097AA-1794-42D9-AAEA-EA9B56BEDD79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42412517-D92F-41D7-9179-E5D6500AD204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42412517-D92F-41D7-9179-E5D6500AD204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42412517-D92F-41D7-9179-E5D6500AD204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42412517-D92F-41D7-9179-E5D6500AD204}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
