@@ -21,7 +21,7 @@ namespace _11.AutoTestFramework.Scenarios
             NavigateTo.LoginFormSecenarioThroughtTestCases(Driver);
         }
 
-        [Test]
+        [TestCase]
         public void LessThan4Chars()
         {
             Actions.FillLoginForm(Config.Credentials.Valid.Username,
@@ -32,7 +32,7 @@ namespace _11.AutoTestFramework.Scenarios
             alert.Accept();
         }
 
-        [Test]
+        [TestCase]
         public void MoreThan12Chars()
         {
             Actions.FillLoginForm(Config.Credentials.Valid.Username,
@@ -43,7 +43,7 @@ namespace _11.AutoTestFramework.Scenarios
             alert.Accept();
         }
 
-        [TearDown]
+        [OneTimeTearDown]
         public void CleanUp()
         {
             Driver.Quit(); 

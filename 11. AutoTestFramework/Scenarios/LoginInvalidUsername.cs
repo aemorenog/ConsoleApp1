@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace _11.AutoTestFramework.Scenarios
 {
-    [Parallelizable]
+    [Parallelizable(ParallelScope.None)]
     public class LoginInvalidUsername
     {
         IAlert alert;
@@ -13,14 +13,15 @@ namespace _11.AutoTestFramework.Scenarios
         {
 
         }
+
         [OneTimeSetUp]
         public void Initialize()
         {
-            Actions.InitializeDriver();
+            Driver = Actions.InitializeDriver();
             NavigateTo.LoginFormSecenarioThroughtTestCases(Driver);
         }
 
-        [Test]
+        [TestCase]
         public void LessThan5Chars()
         {
             NavigateTo.LoginFormThroughtTheMenu(Driver);
@@ -33,7 +34,7 @@ namespace _11.AutoTestFramework.Scenarios
             alert.Accept();
         }
 
-        [Test]
+        [TestCase]
         public void MoreThan12Chars()
         {
             Actions.FillLoginForm(Config.Credentials.Invalid.Username.ThirteenCharacters,
