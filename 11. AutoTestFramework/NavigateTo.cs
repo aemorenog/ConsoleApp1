@@ -1,15 +1,17 @@
-﻿using _11.AutoTestFramework.UIElements;
-using System.Threading;
-
+﻿
 namespace _11.AutoTestFramework
 {
+    using _11.AutoTestFramework.UIElements;
+    using System.Threading;
+    using OpenQA.Selenium;
+
     public static class NavigateTo
     {
-        public static void LoginFormSecenarioThroughtTestCases()
+        public static void LoginFormSecenarioThroughtTestCases(IWebDriver driver)
         {
-            Menu menu = new Menu();
-            TestCasesPage tcPage = new TestCasesPage();
-            UsernameCasePost ucPost = new UsernameCasePost();
+            Menu menu = new Menu(driver);
+            TestCasesPage tcPage = new TestCasesPage(driver);
+            UsernameCasePost ucPost = new UsernameCasePost(driver);
 
             menu.TestCases.Click();
             tcPage.UsernameCase.Click();
@@ -17,11 +19,11 @@ namespace _11.AutoTestFramework
         }
 
 
-       public static void LoginFormThroughtTheMenu()
+       public static void LoginFormThroughtTheMenu(IWebDriver driver)
         {
-            Menu menu = new Menu();
+            Menu menu = new Menu(driver);
 
-            TestScenariosPage tsPage = new TestScenariosPage();
+            TestScenariosPage tsPage = new TestScenariosPage(driver);
 
             menu.TestScenarios.Click();
             Thread.Sleep(500);
@@ -31,11 +33,11 @@ namespace _11.AutoTestFramework
 
         }
 
-        public static void LoginFormThroughThePost()
+        public static void LoginFormThroughThePost(IWebDriver driver)
         {
-            Menu menu = new Menu();
-            TestCasesPage tcPage = new TestCasesPage();
-            UsernameFieldPost ufPost = new UsernameFieldPost();
+            Menu menu = new Menu(driver);
+            TestCasesPage tcPage = new TestCasesPage(driver);
+            UsernameFieldPost ufPost = new UsernameFieldPost(driver);
 
             menu.TestCases.Click();
             Thread.Sleep(500);
