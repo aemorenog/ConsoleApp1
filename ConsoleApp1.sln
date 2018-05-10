@@ -31,6 +31,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementLocation", "ElementL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecuteJavaScriptCSharp", "ExecuteJavaScriptCSharp\ExecuteJavaScriptCSharp.csproj", "{42412517-D92F-41D7-9179-E5D6500AD204}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserlikeAction", "UserlikeAction\UserlikeAction.csproj", "{67EAEC78-A501-4A89-AE50-F3FEE87B67FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DifferentBrowsers", "DifferentBrowsers\DifferentBrowsers.csproj", "{880A69EA-0701-44FD-B8C6-86360B36655B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SizeAndPosition", "SizeAndPosition\SizeAndPosition.csproj", "{9987FA14-71AB-4E6D-9602-7E3C555B018D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowAndTabs", "WindowAndTabs\WindowAndTabs.csproj", "{8AF04C60-B959-4D13-8C26-7FFE997E0236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenCloseTabs", "OpenCloseTabs\OpenCloseTabs.csproj", "{3AB2F0EA-9DF4-4AB7-BFE0-F283752728F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +103,26 @@ Global
 		{42412517-D92F-41D7-9179-E5D6500AD204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42412517-D92F-41D7-9179-E5D6500AD204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42412517-D92F-41D7-9179-E5D6500AD204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67EAEC78-A501-4A89-AE50-F3FEE87B67FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67EAEC78-A501-4A89-AE50-F3FEE87B67FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67EAEC78-A501-4A89-AE50-F3FEE87B67FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67EAEC78-A501-4A89-AE50-F3FEE87B67FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{880A69EA-0701-44FD-B8C6-86360B36655B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{880A69EA-0701-44FD-B8C6-86360B36655B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{880A69EA-0701-44FD-B8C6-86360B36655B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{880A69EA-0701-44FD-B8C6-86360B36655B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9987FA14-71AB-4E6D-9602-7E3C555B018D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9987FA14-71AB-4E6D-9602-7E3C555B018D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9987FA14-71AB-4E6D-9602-7E3C555B018D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9987FA14-71AB-4E6D-9602-7E3C555B018D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF04C60-B959-4D13-8C26-7FFE997E0236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF04C60-B959-4D13-8C26-7FFE997E0236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF04C60-B959-4D13-8C26-7FFE997E0236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF04C60-B959-4D13-8C26-7FFE997E0236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AB2F0EA-9DF4-4AB7-BFE0-F283752728F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB2F0EA-9DF4-4AB7-BFE0-F283752728F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB2F0EA-9DF4-4AB7-BFE0-F283752728F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB2F0EA-9DF4-4AB7-BFE0-F283752728F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
