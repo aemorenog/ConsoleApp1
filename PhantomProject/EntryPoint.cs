@@ -21,6 +21,7 @@ class Program
         string sitemapURL = "http://testing.todvachev.com/sitemap-posttype-post.xml";
         string titleSelector = "#main-content > article > header > h1";
         string contentSelector = "#main-content > article > div";
+        string path = "";
 
         int startIndex = 0;
         int linkLength = 0;
@@ -29,7 +30,7 @@ class Program
 
         pageSource = driver.PageSource.Split(' ');
 
-        foreach(var item in pageSource)
+        foreach (var item in pageSource)
         {
             if (item.Contains("<loc>"))
             {
@@ -40,7 +41,6 @@ class Program
                 //extractedLinks.Add(item.Substring(item.IndexOf("<loc>")));
                 extractedLinks.Add(item.Substring(startIndex, linkLength));
                 Console.WriteLine(item.Substring(startIndex, linkLength));
-
                 //Console.WriteLine(item.Substring(item.IndexOf("<loc>")));
             }
         }
@@ -61,15 +61,20 @@ class Program
             Console.WriteLine(contentElement.Text);*/
         }
 
-        Directory.CreateDirectory(@"\ExtractedContent");
+        Directory.CreateDirectory(Directory.GetCurrentDirectory() + @"\ExtractedContent");
 
-        using (StreamWriter sw = File.CreateText(Directory.GetCurrentDirectory() + @"\ExtractedContent\ExtractedTest.txt"))
-        {
-            sw.WriteLine("TITLE: {0}",extractedTitle[0]);
-            sw.WriteLine("CONTENT:");
-            sw.Write(extractedContent[0]);
+        for (int i = 0; i < extractedTitle.Count; i++)
+        {   
+            path = String.Format(Directory.GetCurrentDirectory() + @"\ExtractedContent\0{0} {1}.txt", i, extractedTitle[i]);
+
+            using (StreamWriter sw = File.CreateText(path))
+            {
+                sw.WriteLine("TITLE: {0}", extractedTitle[i]);
+                sw.WriteLine("CONTENT:");
+                sw.Write(extractedContent[i ]);
+            }
+
         }
-
         //Console.WriteLine(driver.PageSource);
     }
 }
